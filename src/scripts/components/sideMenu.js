@@ -4,9 +4,9 @@ require('./sideMenu.scss');
 
 var SideMenu = React.createClass({
     render: function() {
-        var items = [];
-        this.props.items.forEach(function(item){
-            items.push(<li><a href={item.url}>{item.name}</a></li>);
+        var links = [];
+        this.props.links.forEach(function(link){
+            links.push(<li><a href={link.url}>{link.name}</a></li>);
         });
         var title = this.props.title;
         return (
@@ -14,9 +14,10 @@ var SideMenu = React.createClass({
                 <div className='menuTitleArea'>
                     <span className='menuTitle'>{title}</span>
                 </div>
+                <p>Content Area</p>
                 <div className='menuContent'>
-                    <ul className='items'>
-                        {items}
+                    <ul className='linkList'>
+                        {links}
                     </ul>
                 </div>
             </div>
