@@ -3,18 +3,20 @@ import React from 'react';
 require('./sideMenu.scss');
 
 var SideMenu = React.createClass({
+    getInitialState: function(){
+        return { breadcrumb: "Boob"};
+    },
     render: function() {
         var links = [];
         this.props.links.forEach(function(link){
             links.push(<li><a href={link.url}>{link.name}</a></li>);
         });
-        var title = this.props.title;
+        var title = this.state.breadcrumb;
         return (
             <div className='sideMenu'>
                 <div className='menuTitleArea'>
                     <span className='menuTitle'>{title}</span>
                 </div>
-                <p>Content Area</p>
                 <div className='menuContent'>
                     <ul className='linkList'>
                         {links}

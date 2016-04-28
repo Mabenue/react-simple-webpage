@@ -22,7 +22,7 @@ body {
 }
 
 a {
-  color: #4183c4;
+  color: #321ACB;
   text-decoration: none;
   &:hover {
     text-decoration: underline;
@@ -32,12 +32,13 @@ a {
 h1, h2, h3, h4 {
   font-family: "Josefin Slab", serif;
   font-weight: bold;
+  color: #EC004B;
   margin: 0 0 1em;
   padding: 0;
 }
 
 h1 {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #FC9BBA;
   font-size: 2.5em;
   font-weight: bold;
   margin: 0 0 1em;
@@ -45,7 +46,8 @@ h1 {
 }
 
 h2 {
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #FC9BBA;
+  color: #EEE;
   font-size: 2em;
 }
 

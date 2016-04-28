@@ -2,7 +2,11 @@
   color: #eee;
   background: #222;
   padding: 1em;
-  margin-bottom: 1em;
+  margin: auto;
   font-size: 1.5em;
   text-align: center;
+  width: 800px;
+  @media screen  and (max-width: 600px){
+    width: 380px;
+  }
 }
